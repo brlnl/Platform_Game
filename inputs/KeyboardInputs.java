@@ -7,19 +7,34 @@ public class KeyboardInputs implements KeyListener{
 
     @Override
     public void keyTyped(KeyEvent e) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'keyTyped'");
+        
     }
 
     @Override
     public void keyPressed(KeyEvent e) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'keyPressed'");
+
+    switch(e.getKeyCode()){
+
+        case KeyEvent.VK_W:
+       System.out.println("It's W");
+       break;
+       case KeyEvent.VK_A:
+       System.out.println("It's A");
+       break;
+       case KeyEvent.VK_S:
+       System.out.println("It's S");
+       break;
+       case KeyEvent.VK_D:
+       System.out.println("It's D");
+       break;
+      
+    }
+
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
-        System.out.println("A key is pressed");
+       
     }
     
 }
