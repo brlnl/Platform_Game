@@ -38,6 +38,8 @@ private int xDelta = 100, yDelta = 100;
         super.paintComponent(g);
 
         g.fillRect(xDelta , yDelta, 200, 50);
+        //frames++;
+        //if(System.currentTimeMillis() - las)
         repaint();
     }
     
