@@ -3,7 +3,6 @@ package main;
 import javax.swing.JPanel;
 import inputs.KeyboardInputs;
 import inputs.MouseInputs;
-
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.Random;
@@ -16,6 +15,7 @@ private float xDir = 0.003f, yDir = 0.003f;
 private int frames = 0;
 private long lastCheck = 0;
 private Color color = new Color(150, 20, 90);
+
 private Random random;
 
     public GamePanel(){
@@ -60,14 +60,14 @@ private Random random;
     }
     
     private void updateRectangle(){
-        xDelta+= xDir;
+        xDelta += xDir;
         if(xDelta > 400 || xDelta < 0){
             xDir *= -1;
             color =  getRndColor();
         }
             
 
-        yDelta+= yDir;
+        yDelta += yDir;
         if(yDelta > 400 || yDelta < 0){
             yDir *= -1;
             color = getRndColor();
@@ -84,3 +84,4 @@ private Random random;
             return new Color(r,g,b);
         }
 }
+//heute leider gar nichts :/
