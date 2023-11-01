@@ -19,12 +19,13 @@ public MouseInputs(GamePanel gamePanel){
 
     @Override
     public void mouseMoved(MouseEvent e) {
-    // gamePanel.setRectPos(e.getX(), e.getY());
+    
     }
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        System.out.println("Mouse clicked");
+        
+        
     }
 
     @Override
