@@ -5,10 +5,10 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Objects;
 
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
-
 import inputs.KeyboardInputs;
 import inputs.MouseInputs;
 
@@ -33,13 +33,14 @@ private BufferedImage img;
     }
 
     private void importImg() {
-        InputStream is = getClass().getResourceAsStream("/player_sprites.png");
-
-        try {
-            img = ImageIO.read(is);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+      InputStream inputStream = getClass().getResourceAsStream("~/player_sprites.png");
+      
+            try {
+                img = ImageIO.read(inputStream);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        
     }
 
     private void setPanelSize() {
